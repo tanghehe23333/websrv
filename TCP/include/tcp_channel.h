@@ -1,0 +1,74 @@
+#ifndef _TCP_CHANNEL_H
+#define _TCP_CHANNEL_H
+
+#include <memory>
+#include <string>
+#include <functional>
+#include <mutex>
+#include <vector>
+#include <optional>
+#include <filesystem>
+#include <chrono>
+#include <assert.h>
+#include <sys/epoll.h>
+#include <sys/poll.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <sys/sendfile.h>
+
+#include "tcp_buffer.h"
+#include "time_point.h"
+
+#define TIME_RECOED 0//先不记录时间
+
+class PoolProcess;
+class TCPServer;
+//参考muduo的Channel
+class Channel : public std::enable_shared_from_this<Channel>//muduo 封装fd的IO事件分发
+{
+    using CallBackFunction = std::function<void()>;
+public:
+    Channel(int fd, std::shared_ptr<Buffer> buf = nullptr)
+        : fd_(fd),
+          events_(EPOLLIN | EPOLLPRI),
+          fileFd_(0),
+          fileSize_(0),
+          fileIndex_(0),
+          path_(std::nullopt),
+#if TIME_RECOED
+          timeCost_("channel: "),
+#endif            
+          buf_(buf)
+    {}
+    ~Channel();
+    // void readAll(std::vector<char> &);
+    void send(const std::string& message);
+    void sendWithFile(const std::string &, const std::filesystem::path &);
+    void dealEvent(epoll_event& event); //事件提取
+    const int events() const { return events_; }
+    void enableWrite();
+    Buffer* buf() {return buf_.get();};
+    static void setPoolPro(std::shared_ptr<PoolProcess> pro);
+    static void setServer(TCPServer* server);
+    int fd() const { return fd_; }
+private:
+    void disableWrite();
+    bool sendFile();
+    void close();
+private:
+    int fd_;
+    int events_;
+    int fileFd_;
+    int64_t fileSize_;
+    off_t fileIndex_;
+    std::optional<std::filesystem::path> path_;    
+#if TIME_RECOED
+    Time::TimeRecord timeCost_; // 记录占用时间
+#endif
+    std::shared_ptr<Buffer> buf_;
+    static thread_local std::shared_ptr<PoolProcess> poolPro_;
+    static TCPServer* server_;
+};
+
+#endif

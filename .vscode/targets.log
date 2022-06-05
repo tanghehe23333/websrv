@@ -1,0 +1,1687 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Jun  5 11:17:44 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+PAPERSIZE = a4
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/brightdust/cppProject/websrv/tl/web_server-master
+# makefile (from 'Makefile', line 39)
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 45)
+RM = /usr/local/bin/cmake -E remove -f
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"42e84e0914b17800d483f69e299e1b00.zh-cn","_translationsConfigFile":"/home/brightdust/.config/Code/clp/42e84e0914b17800d483f69e299e1b00.zh-cn/tcf.json","_cacheRoot":"/home/brightdust/.config/Code/clp/42e84e0914b17800d483f69e299e1b00.zh-cn","_resolvedLanguagePackCoreLocation":"/home/brightdust/.config/Code/clp/42e84e0914b17800d483f69e299e1b00.zh-cn/da15b6fd3ef856477bf6f4fb29ba1b7af717770d","_corruptedFile":"/home/brightdust/.config/Code/clp/42e84e0914b17800d483f69e299e1b00.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/share/code/code
+# environment
+JOURNAL_STREAM = 8:84134
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# makefile (from 'Makefile', line 54)
+CMAKE_BINARY_DIR = /home/brightdust/cppProject/websrv/tl/web_server-master
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# environment
+USERNAME = brightdust
+# environment
+MAKELEVEL := 0
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+MANAGERPID = 2040
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = zh_CN.UTF-8
+# environment
+VSCODE_CWD = /home/brightdust
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+SESSION_MANAGER = local/VMubuntu:@/tmp/.ICE-unix/2252,unix/VMubuntu:/tmp/.ICE-unix/2252
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = 279d117bbf6b42da9a6cf352582fc1b6
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3569
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/brightdust/cppProject/websrv/tl/web_server-master
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 2217
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/brightdust
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CODE_CACHE_PATH = /home/brightdust/.config/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+# environment
+LOGNAME = brightdust
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from 'Makefile', line 48)
+EQUALS = =
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+LC_TIME = zh_CN.UTF-8
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SHLVL = 0
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-291e95ac-759e-48be-b57b-a7a80c8d2db5.sock
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = brightdust
+# environment
+LC_MONETARY = zh_CN.UTF-8
+# makefile
+.DEFAULT_GOAL := default_target
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# makefile (from 'Makefile', line 51)
+CMAKE_SOURCE_DIR = /home/brightdust/cppProject/websrv/tl/web_server-master
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = zh_CN.UTF-8
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = zh_CN:en
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-6920b679-1.67.1-main.sock
+# makefile
+MAKEFLAGS = pqrRs
+# environment
+MFLAGS = -pqrRs
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = zh_CN.UTF-8
+# environment
+QT_ACCESSIBILITY = 1
+# default
+MAKEFILES := 
+# environment
+LC_NUMERIC = zh_CN.UTF-8
+# automatic
+<F = $(notdir $<)
+# environment
+LC_MEASUREMENT = zh_CN.UTF-8
+# environment
+LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# makefile (from 'Makefile', line 42)
+CMAKE_COMMAND = /usr/local/bin/cmake
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 21)
+SUFFIXES = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+LC_IDENTIFICATION = zh_CN.UTF-8
+# default
+.RECIPEPREFIX := 
+# environment
+LC_ADDRESS = zh_CN.UTF-8
+# environment
+LANG = C
+# environment
+VSCODE_PID = 3569
+# variable set hash-table stats:
+# Load=113/1024=11%, Rehash=0, Collisions=20/147=14%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2053, inode 162250): 22 files, no impossibilities.
+
+# 22 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+%.hpux_make_needs_suffix_list:
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+server/fast:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 123):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+
+HTTP/src/http_deal.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 168):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/http_deal.cpp.i
+
+HTTP/src/http_deal.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 159):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/http_deal.cpp.o
+
+base/src/local_message.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 555):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/src/local_message.cpp.s
+ 
+
+cmake_force:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+HTTP/src/html_file.i: HTTP/src/html_file.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+HTTP/src/html_file.o: HTTP/src/html_file.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+time/src/time_point.s: time/src/time_point.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_acceptor_epoll.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 294):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.o
+
+TCP/src/tcp_buff_pool.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 321):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.o
+
+edit_cache:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 61):
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/local/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+
+TCP/src/tcp_thread_pool_process.s: TCP/src/tcp_thread_pool_process.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+base/src/local_message.o: base/src/local_message.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+log/src/log_stream.o: log/src/log_stream.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_thread_pool.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 465):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.i
+
+log/src/log_thread.s: log/src/log_thread.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_thread_pool.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 456):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.o
+
+HTTP/src/http_request.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 222):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/http_request.cpp.i
+
+all: cmake_check_build_system
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+#  recipe to execute (from 'Makefile', line 83):
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles /home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles 0
+
+time/src/timmer.s: time/src/timmer.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+.PHONY: default_target cmake_force edit_cache edit_cache/fast rebuild_cache rebuild_cache/fast all clean clean/fast preinstall preinstall/fast depend server server/fast HTTP/src/html_file.o HTTP/src/html_file.cpp.o HTTP/src/html_file.i HTTP/src/html_file.cpp.i HTTP/src/html_file.s HTTP/src/html_file.cpp.s HTTP/src/http_deal.o HTTP/src/http_deal.cpp.o HTTP/src/http_deal.i HTTP/src/http_deal.cpp.i HTTP/src/http_deal.s HTTP/src/http_deal.cpp.s HTTP/src/http_message.o HTTP/src/http_message.cpp.o HTTP/src/http_message.i HTTP/src/http_message.cpp.i HTTP/src/http_message.s HTTP/src/http_message.cpp.s HTTP/src/http_request.o HTTP/src/http_request.cpp.o HTTP/src/http_request.i HTTP/src/http_request.cpp.i HTTP/src/http_request.s HTTP/src/http_request.cpp.s HTTP/src/http_server.o HTTP/src/http_server.cpp.o HTTP/src/http_server.i HTTP/src/http_server.cpp.i HTTP/src/http_server.s HTTP/src/http_server.cpp.s TCP/src/tcp_acceptor.o TCP/src/tcp_acceptor.cpp.o TCP/src/tcp_acceptor.i TCP/src/tcp_acceptor.cpp.i TCP/src/tcp_acceptor.s TCP/src/tcp_acceptor.cpp.s TCP/src/tcp_acceptor_epoll.o TCP/src/tcp_acceptor_epoll.cpp.o TCP/src/tcp_acceptor_epoll.i TCP/src/tcp_acceptor_epoll.cpp.i TCP/src/tcp_acceptor_epoll.s TCP/src/tcp_acceptor_epoll.cpp.s TCP/src/tcp_buff_pool.o TCP/src/tcp_buff_pool.cpp.o TCP/src/tcp_buff_pool.i TCP/src/tcp_buff_pool.cpp.i TCP/src/tcp_buff_pool.s TCP/src/tcp_buff_pool.cpp.s TCP/src/tcp_buffer.o TCP/src/tcp_buffer.cpp.o TCP/src/tcp_buffer.i TCP/src/tcp_buffer.cpp.i TCP/src/tcp_buffer.s TCP/src/tcp_buffer.cpp.s TCP/src/tcp_channel.o TCP/src/tcp_channel.cpp.o TCP/src/tcp_channel.i TCP/src/tcp_channel.cpp.i TCP/src/tcp_channel.s TCP/src/tcp_channel.cpp.s TCP/src/tcp_connect.o TCP/src/tcp_connect.cpp.o TCP/src/tcp_connect.i TCP/src/tcp_connect.cpp.i TCP/src/tcp_connect.s TCP/src/tcp_connect.cpp.s TCP/src/tcp_server.o TCP/src/tcp_server.cpp.o TCP/src/tcp_server.i TCP/src/tcp_server.cpp.i TCP/src/tcp_server.s TCP/src/tcp_server.cpp.s TCP/src/tcp_thread_pool.o TCP/src/tcp_thread_pool.cpp.o TCP/src/tcp_thread_pool.i TCP/src/tcp_thread_pool.cpp.i TCP/src/tcp_thread_pool.s TCP/src/tcp_thread_pool.cpp.s TCP/src/tcp_thread_pool_process.o TCP/src/tcp_thread_pool_process.cpp.o TCP/src/tcp_thread_pool_process.i TCP/src/tcp_thread_pool_process.cpp.i TCP/src/tcp_thread_pool_process.s TCP/src/tcp_thread_pool_process.cpp.s base/src/file_read.o base/src/file_read.cpp.o base/src/file_read.i base/src/file_read.cpp.i base/src/file_read.s base/src/file_read.cpp.s base/src/local_message.o base/src/local_message.cpp.o base/src/local_message.i base/src/local_message.cpp.i base/src/local_message.s base/src/local_message.cpp.s base/src/safe_queue.o base/src/safe_queue.cpp.o base/src/safe_queue.i base/src/safe_queue.cpp.i base/src/safe_queue.s base/src/safe_queue.cpp.s log/src/log_buffer.o log/src/log_buffer.cpp.o log/src/log_buffer.i log/src/log_buffer.cpp.i log/src/log_buffer.s log/src/log_buffer.cpp.s log/src/log_file.o log/src/log_file.cpp.o log/src/log_file.i log/src/log_file.cpp.i log/src/log_file.s log/src/log_file.cpp.s log/src/log_stream.o log/src/log_stream.cpp.o log/src/log_stream.i log/src/log_stream.cpp.i log/src/log_stream.s log/src/log_stream.cpp.s log/src/log_thread.o log/src/log_thread.cpp.o log/src/log_thread.i log/src/log_thread.cpp.i log/src/log_thread.s log/src/log_thread.cpp.s log/src/logger.o log/src/logger.cpp.o log/src/logger.i log/src/logger.cpp.i log/src/logger.s log/src/logger.cpp.s main.o main.cpp.o main.i main.cpp.i main.s main.cpp.s mysql/src/mysql_buf.o mysql/src/mysql_buf.cpp.o mysql/src/mysql_buf.i mysql/src/mysql_buf.cpp.i mysql/src/mysql_buf.s mysql/src/mysql_buf.cpp.s mysql/src/mysql_conn.o mysql/src/mysql_conn.cpp.o mysql/src/mysql_conn.i mysql/src/mysql_conn.cpp.i mysql/src/mysql_conn.s mysql/src/mysql_conn.cpp.s time/src/time_point.o time/src/time_point.cpp.o time/src/time_point.i time/src/time_point.cpp.i time/src/time_point.s time/src/time_point.cpp.s time/src/timmer.o time/src/timmer.cpp.o time/src/timmer.i time/src/timmer.cpp.i time/src/timmer.s time/src/timmer.cpp.s help cmake_check_build_system
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+HTTP/src/http_server.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 249):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/http_server.cpp.i
+
+HTTP/src/http_server.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 240):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/http_server.cpp.o
+
+TCP/src/tcp_server.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 447):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_server.cpp.s
+
+TCP/src/tcp_connect.s: TCP/src/tcp_connect.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+base/src/local_message.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 546):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/src/local_message.cpp.i
+
+main.s: main.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+preinstall/fast:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 105):
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+
+log/src/log_stream.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 663):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/log_stream.cpp.s
+
+log/src/log_buffer.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 609):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/log_buffer.cpp.s
+
+TCP/src/tcp_server.i: TCP/src/tcp_server.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_buff_pool.o: TCP/src/tcp_buff_pool.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+log/src/log_stream.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 645):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/log_stream.cpp.o
+
+HTTP/src/http_message.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 204):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/http_message.cpp.s
+
+time/src/time_point.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 816):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/time/src/time_point.cpp.i
+
+time/src/time_point.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 807):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/time/src/time_point.cpp.o
+
+log/src/log_file.s: log/src/log_file.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+base/src/file_read.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 528):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/src/file_read.cpp.s
+
+.SUFFIXES: .hpux_make_needs_suffix_list
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+log/src/log_buffer.i: log/src/log_buffer.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+mysql/src/mysql_buf.s: mysql/src/mysql_buf.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+log/src/log_buffer.o: log/src/log_buffer.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_thread_pool_process.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 492):
+ 
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.i
+
+TCP/src/tcp_thread_pool_process.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 483):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.o
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 12:51:29.497904329
+#  File has been updated.
+#  Successfully updated.
+
+log/src/log_thread.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 681):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/log_thread.cpp.i
+
+HTTP/src/http_message.i: HTTP/src/http_message.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+log/src/logger.i: log/src/logger.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_acceptor.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 285):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.s
+
+log/src/log_thread.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 672):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/log_thread.cpp.o
+
+HTTP/src/http_message.o: HTTP/src/http_message.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+server: cmake_check_build_system
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 118):
+	$(MAKE) -f CMakeFiles/Makefile2 server
+
+base/src/file_read.i: base/src/file_read.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+base/src/safe_queue.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 582):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/src/safe_queue.cpp.s
+
+time/src/timmer.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 843):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/time/src/timmer.cpp.i
+
+base/src/file_read.o: base/src/file_read.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+time/src/timmer.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 834):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/time/src/timmer.cpp.o
+
+.NOTPARALLEL:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+TCP/src/tcp_buffer.s: TCP/src/tcp_buffer.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_connect.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 411):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.i
+
+TCP/src/tcp_connect.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 402):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.o
+
+TCP/src/tcp_acceptor.i: TCP/src/tcp_acceptor.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_acceptor_epoll.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 312):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.s
+
+TCP/src/tcp_acceptor.o: TCP/src/tcp_acceptor.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+HTTP/src/http_deal.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 177):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/http_deal.cpp.s
+
+clean/fast: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+base/src/safe_queue.i: base/src/safe_queue.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+main.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 735):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cpp.i
+
+mysql/src/mysql_conn.s: mysql/src/mysql_conn.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+HTTP/src/html_file.s: HTTP/src/html_file.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+main.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 726):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cpp.o
+
+TCP/src/tcp_channel.i: TCP/src/tcp_channel.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_channel.o: TCP/src/tcp_channel.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+log/src/log_stream.i: log/src/log_stream.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_buff_pool.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 339):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.s
+
+cmake_check_build_system:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := cmake_check_build_system
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=3/14=21%
+#  recipe to execute (from 'Makefile', line 956):
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+
+TCP/src/tcp_acceptor_epoll.i: TCP/src/tcp_acceptor_epoll.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_acceptor_epoll.o: TCP/src/tcp_acceptor_epoll.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+HTTP/src/http_deal.i: HTTP/src/http_deal.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+log/src/log_file.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 627):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/log_file.cpp.i
+
+HTTP/src/http_deal.o: HTTP/src/http_deal.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+log/src/log_file.cpp.o:
+ 
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 618):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/log_file.cpp.o
+
+base/src/local_message.s: base/src/local_message.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+log/src/log_stream.s: log/src/log_stream.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+mysql/src/mysql_conn.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 789):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.i
+
+time/src/time_point.o: time/src/time_point.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+base/src/safe_queue.o: base/src/safe_queue.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+mysql/src/mysql_buf.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 762):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.i
+
+TCP/src/tcp_thread_pool.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 474):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.s
+
+mysql/src/mysql_conn.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 780):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.o
+
+help:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 857):
+	@echo "The following are some of the valid targets for this Makefile:"
+	@echo "... all (the default if no target is provided)"
+	@echo "... clean"
+	@echo "... depend"
+	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... server"
+	@echo "... HTTP/src/html_file.o"
+	@echo "... HTTP/src/html_file.i"
+	@echo "... HTTP/src/html_file.s"
+	@echo "... HTTP/src/http_deal.o"
+	@echo "... HTTP/src/http_deal.i"
+	@echo "... HTTP/src/http_deal.s"
+	@echo "... HTTP/src/http_message.o"
+	@echo "... HTTP/src/http_message.i"
+	@echo "... HTTP/src/http_message.s"
+	@echo "... HTTP/src/http_request.o"
+	@echo "... HTTP/src/http_request.i"
+	@echo "... HTTP/src/http_request.s"
+	@echo "... HTTP/src/http_server.o"
+	@echo "... HTTP/src/http_server.i"
+	@echo "... HTTP/src/http_server.s"
+	@echo "... TCP/src/tcp_acceptor.o"
+	@echo "... TCP/src/tcp_acceptor.i"
+	@echo "... TCP/src/tcp_acceptor.s"
+	@echo "... TCP/src/tcp_acceptor_epoll.o"
+	@echo "... TCP/src/tcp_acceptor_epoll.i"
+	@echo "... TCP/src/tcp_acceptor_epoll.s"
+	@echo "... TCP/src/tcp_buff_pool.o"
+	@echo "... TCP/src/tcp_buff_pool.i"
+	@echo "... TCP/src/tcp_buff_pool.s"
+	@echo "... TCP/src/tcp_buffer.o"
+	@echo "... TCP/src/tcp_buffer.i"
+	@echo "... TCP/src/tcp_buffer.s"
+	@echo "... TCP/src/tcp_channel.o"
+	@echo "... TCP/src/tcp_channel.i"
+	@echo "... TCP/src/tcp_channel.s"
+	@echo "... TCP/src/tcp_connect.o"
+	@echo "... TCP/src/tcp_connect.i"
+	@echo "... TCP/src/tcp_connect.s"
+	@echo "... TCP/src/tcp_server.o"
+	@echo "... TCP/src/tcp_server.i"
+	@echo "... TCP/src/tcp_server.s"
+	@echo "... TCP/src/tcp_thread_pool.o"
+	@echo "... TCP/src/tcp_thread_pool.i"
+	@echo "... TCP/src/tcp_thread_pool.s"
+	@echo "... TCP/src/tcp_thread_pool_process.o"
+	@echo "... TCP/src/tcp_thread_pool_process.i"
+	@echo "... TCP/src/tcp_thread_pool_process.s"
+	@echo "... base/src/file_read.o"
+	@echo "... base/src/file_read.i"
+	@echo "... base/src/file_read.s"
+	@echo "... base/src/local_message.o"
+	@echo "... base/src/local_message.i"
+	@echo "... base/src/local_message.s"
+	@echo "... base/src/safe_queue.o"
+	@echo "... base/src/safe_queue.i"
+	@echo "... base/src/safe_queue.s"
+	@echo "... log/src/log_buffer.o"
+	@echo "... log/src/log_buffer.i"
+	@echo "... log/src/log_buffer.s"
+	@echo "... log/src/log_file.o"
+	@echo "... log/src/log_file.i"
+	@echo "... log/src/log_file.s"
+	@echo "... log/src/log_stream.o"
+	@echo "... log/src/log_stream.i"
+	@echo "... log/src/log_stream.s"
+	@echo "... log/src/log_thread.o"
+	@echo "... log/src/log_thread.i"
+	@echo "... log/src/log_thread.s"
+	@echo "... log/src/logger.o"
+	@echo "... log/src/logger.i"
+	@echo "... log/src/logger.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... mysql/src/mysql_buf.o"
+	@echo "... mysql/src/mysql_buf.i"
+	@echo "... mysql/src/mysql_buf.s"
+	@echo "... mysql/src/mysql_conn.o"
+	@echo "... mysql/src/mysql_conn.i"
+	@echo "... mysql/src/mysql_conn.s"
+	@echo "... time/src/time_point.o"
+	@echo "... time/src/time_point.i"
+	@echo "... time/src/time_point.s"
+	@echo "... time/src/timmer.o"
+	@echo "... time/src/timmer.i"
+	@echo "... time/src/timmer.s"
+
+mysql/src/mysql_buf.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 753):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.o
+
+base/src/local_message.i: base/src/local_message.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+HTTP/src/http_request.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 231):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/http_request.cpp.s
+
+TCP/src/tcp_buff_pool.i: TCP/src/tcp_buff_pool.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+preinstall: all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 100):
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+
+HTTP/src/http_server.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 258):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/http_server.cpp.s
+
+TCP/src/tcp_thread_pool.i: TCP/src/tcp_thread_pool.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_thread_pool.o: TCP/src/tcp_thread_pool.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+HTTP/src/http_request.i: HTTP/src/http_request.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+.SILENT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+TCP/src/tcp_buffer.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 357):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.i
+
+depend:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 110):
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+
+TCP/src/tcp_buffer.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 348):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.o
+
+log/src/log_stream.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 654):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/log_stream.cpp.i
+
+HTTP/src/http_server.i: HTTP/src/http_server.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+HTTP/src/http_server.o: HTTP/src/http_server.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_server.s: TCP/src/tcp_server.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+HTTP/src/html_file.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 141):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/html_file.cpp.i
+ 
+
+HTTP/src/html_file.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 132):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/html_file.cpp.o
+
+base/src/safe_queue.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 564):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/src/safe_queue.cpp.o
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+time/src/time_point.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 825):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/time/src/time_point.cpp.s
+
+default_target: all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+log/src/logger.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 708):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/logger.cpp.i
+
+log/src/logger.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 699):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/logger.cpp.o
+
+log/src/log_buffer.s: log/src/log_buffer.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_thread_pool_process.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 501):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.s
+
+base/src/local_message.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 537):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/src/local_message.cpp.o
+
+TCP/src/tcp_channel.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 393):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.s
+
+log/src/log_thread.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 690):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/log_thread.cpp.s
+
+HTTP/src/http_message.s: HTTP/src/http_message.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+time/src/time_point.i: time/src/time_point.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_buff_pool.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 330):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.i
+
+TCP/src/tcp_server.o: TCP/src/tcp_server.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 90):
+	$(MAKE) -f CMakeFiles/Makefile2 clean
+
+base/src/file_read.s: base/src/file_read.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+time/src/timmer.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 852):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/time/src/timmer.cpp.s
+
+rebuild_cache/fast: rebuild_cache
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_thread_pool_process.i: TCP/src/tcp_thread_pool_process.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_thread_pool_process.o: TCP/src/tcp_thread_pool_process.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+edit_cache/fast: edit_cache
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_connect.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 420):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.s
+
+log/src/log_thread.i: log/src/log_thread.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_acceptor.s: TCP/src/tcp_acceptor.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+log/src/log_thread.o: log/src/log_thread.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+base/src/safe_queue.s: base/src/safe_queue.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+main.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 744):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cpp.s
+
+time/src/timmer.i: time/src/timmer.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+HTTP/src/http_request.o: HTTP/src/http_request.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+time/src/timmer.o: time/src/timmer.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_channel.s: TCP/src/tcp_channel.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_server.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 438):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_server.cpp.i
+
+TCP/src/tcp_server.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 429):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_server.cpp.o
+
+TCP/src/tcp_connect.i: TCP/src/tcp_connect.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_connect.o: TCP/src/tcp_connect.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_acceptor_epoll.s: TCP/src/tcp_acceptor_epoll.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+HTTP/src/http_deal.s: HTTP/src/http_deal.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+log/src/log_file.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 636):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/log_file.cpp.s
+
+main.i: main.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+ 
+#  File does not exist.
+#  File has not been updated.
+
+main.o: main.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+mysql/src/mysql_conn.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 798):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.s
+
+log/src/log_buffer.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 600):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/log_buffer.cpp.i
+
+mysql/src/mysql_buf.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 771):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.s
+
+log/src/log_buffer.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 591):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/log_buffer.cpp.o
+
+TCP/src/tcp_buff_pool.s: TCP/src/tcp_buff_pool.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+HTTP/src/http_message.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 195):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/http_message.cpp.i
+
+HTTP/src/http_message.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 186):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/http_message.cpp.o
+
+# Not a target:
+.hpux_make_needs_suffix_list:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+log/src/log_file.i: log/src/log_file.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+base/src/file_read.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 519):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/src/file_read.cpp.i
+
+log/src/log_file.o: log/src/log_file.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+log/src/logger.o: log/src/logger.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+HTTP/src/http_request.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 213):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/http_request.cpp.o
+
+base/src/file_read.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 510):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/src/file_read.cpp.o
+
+mysql/src/mysql_conn.i: mysql/src/mysql_conn.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+mysql/src/mysql_buf.i: mysql/src/mysql_buf.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_thread_pool.s: TCP/src/tcp_thread_pool.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+mysql/src/mysql_conn.o: mysql/src/mysql_conn.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+mysql/src/mysql_buf.o: mysql/src/mysql_buf.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+HTTP/src/http_request.s: HTTP/src/http_request.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_buffer.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 366):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.s
+
+TCP/src/tcp_acceptor.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 276):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.i
+
+TCP/src/tcp_acceptor.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 267):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.o
+
+HTTP/src/http_server.s: HTTP/src/http_server.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+log/src/logger.s: log/src/logger.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+base/src/safe_queue.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 573):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/base/src/safe_queue.cpp.i
+
+HTTP/src/html_file.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 150):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/HTTP/src/html_file.cpp.s
+
+TCP/src/tcp_channel.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 384):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.i
+
+TCP/src/tcp_buffer.i: TCP/src/tcp_buffer.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+TCP/src/tcp_channel.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 375):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.o
+
+TCP/src/tcp_buffer.o: TCP/src/tcp_buffer.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+log/src/logger.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 717):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/log/src/logger.cpp.s
+
+TCP/src/tcp_acceptor_epoll.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 303):
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.i
+
+rebuild_cache:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 72):
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+
+# files hash-table stats:
+# Load=185/1024=18%, Rehash=0, Collisions=81/725=11%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 208 / storage = 4408 B / avg = 21 B
+# current buf: size = 8162 B / used = 4408 B / count = 208 / avg = 21 B
+
+# strcache performance: lookups = 1020 / hit rate = 79%
+# hash-table stats:
+# Load=208/8192=3%, Rehash=0, Collisions=25/1020=2%
+# Finished Make data base on Sun Jun  5 11:17:44 2022
+
+ 

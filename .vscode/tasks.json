@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    
+    "options": 
+    {
+        "cwd": "${workspaceFolder}/build"
+    },
+    "tasks": [
+        {
+            "type": "shell",
+            "label":"cmake",
+            "command":"cmake",
+            "args": ["-DCMAKE_C_COMPILER=/usr/bin/gcc",
+                     "-DCMAKE_CXX_COMPILER=/usr/bin/g++",
+                     "../"]
+
+        },
+        {
+            "label":"make",
+            "group": 
+            {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command":"make",
+            "args": 
+            [
+
+            ]
+        },
+        {
+            "label": "build",
+            "dependsOrder": "sequence",
+            "dependsOn":
+            [
+                "cmake",
+                "make"
+            ]
+        }
+    ]
+}

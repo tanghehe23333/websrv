@@ -1,0 +1,38 @@
+#ifndef _TCP_ACCEPTOR_EPOLL_H
+#define _TCP_ACCEPTOR_EPOLL_H
+
+#include <sys/epoll.h>
+#include <sys/socket.h>
+#include <string>
+#include <unistd.h>
+#include <functional>
+#include <memory>
+#include <errno.h>
+#include <thread>
+#include "tcp_addr.h"
+#include "tcp_acceptor.h"
+//采用epoll的acceptor
+class EpollAcceptor : public Acceptor
+{
+public:
+    EpollAcceptor(FunctionType submitFun)
+        :Acceptor(submitFun)
+    {}
+    ~EpollAcceptor();  
+private:
+    void setSendBufSize(int fd, size_t size = 5120)
+    {
+        ::setsockopt(fd, SOL_SOCKET, SO_SNDBUF, &size, sizeof(size));
+    }
+    bool acceptInit() override;
+    void acceptLoop() override;
+    void addfd(int fd, unsigned short event); //向epoll 中添加文件描述符
+private:
+    int epollFd_; //epoll IO复用
+    static const int timeout_ = 100;
+    static const int evenListMax_ = 16;
+    epoll_event events_[evenListMax_];
+    int nums_;
+};
+
+#endif
