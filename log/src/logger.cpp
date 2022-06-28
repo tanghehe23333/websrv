@@ -11,7 +11,7 @@ namespace Log
     char logMessageBuffer[logMessageSize];
     LogThread* init()//名称空间的init()
     {
-        return LogThread::init();//LogThread的init()
+        return LogThread::init();
     }
 
     Logger::Logger(std::function<void(char*, int)> cb)
@@ -19,7 +19,7 @@ namespace Log
         stream_.setCallBack(cb);
     }
 
-    constexpr char const* Logger::levelToStr()
+    constexpr char const* Logger::levelToStr(Log::LogLevel logLevel)
     {
         switch (logLevel)
         {
@@ -56,16 +56,12 @@ namespace Log
     }
 
     //格式化字符串
-    LogStream& Logger::receive(const char* fileName, int line, const char* funName)
+    LogStream& Logger::receive(const char* fileName, int line, const char* funName, Log::LogLevel logLevel)
     {
-        std::cout << " get input /n" << std::endl;//0603
         Time::timePoint time(Time::GetNowTime());
         dealLogStr(fileName + findFileName(fileName), fileName_);//fileName格式化
         dealLogStr(funName, funName_);//funName格式化
-        stream_ << time.toLogString() << "\t" << getTid() << "\t" << &fileName_[0] << "\t" << line << "\t" << &funName_[0] << "\t" << levelToStr();
-
-        std::cout << time.toLogString() << "\t" << getTid() << "\t" << &fileName_[0] << "\t" << line << "\t" << &funName_[0] << "\t" << levelToStr() << std::endl;//0603
-
+        stream_ << time.toLogString() << "\t" << getTid() << "\t" << &fileName_[0] << "\t" << line << "\t" << &funName_[0] << "\t" << levelToStr(logLevel);
         return stream_;
     }
 

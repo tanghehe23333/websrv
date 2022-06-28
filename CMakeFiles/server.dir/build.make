@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/brightdust/cppProject/websrv/tl/web_server-master
+CMAKE_SOURCE_DIR = /home/brightdust/cppProject/websrv/tl/websrv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/brightdust/cppProject/websrv/tl/web_server-master
+CMAKE_BINARY_DIR = /home/brightdust/cppProject/websrv/tl/websrv
 
 # Include any dependencies generated for this target.
 include CMakeFiles/server.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/server.dir/flags.make
 
 CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.o: TCP/src/tcp_acceptor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_acceptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_acceptor.cpp
 
 CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_acceptor.cpp > CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_acceptor.cpp > CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.i
 
 CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_acceptor.cpp -o CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_acceptor.cpp -o CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.s
 
 CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/server.dir/TCP/src/tcp_acceptor.cpp.o.provides.build: CMakeFiles/serv
 
 CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.o: TCP/src/tcp_acceptor_epoll.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_acceptor_epoll.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_acceptor_epoll.cpp
 
 CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_acceptor_epoll.cpp > CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_acceptor_epoll.cpp > CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.i
 
 CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_acceptor_epoll.cpp -o CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_acceptor_epoll.cpp -o CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.s
 
 CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/server.dir/TCP/src/tcp_acceptor_epoll.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.o: TCP/src/tcp_thread_pool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_thread_pool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_thread_pool.cpp
 
 CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_thread_pool.cpp > CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_thread_pool.cpp > CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.i
 
 CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_thread_pool.cpp -o CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_thread_pool.cpp -o CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.s
 
 CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/server.dir/TCP/src/tcp_thread_pool.cpp.o.provides.build: CMakeFiles/s
 
 CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.o: TCP/src/tcp_connect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_connect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_connect.cpp
 
 CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_connect.cpp > CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_connect.cpp > CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.i
 
 CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_connect.cpp -o CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_connect.cpp -o CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.s
 
 CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/server.dir/TCP/src/tcp_connect.cpp.o.provides.build: CMakeFiles/serve
 
 CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.o: TCP/src/tcp_thread_pool_process.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_thread_pool_process.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_thread_pool_process.cpp
 
 CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_thread_pool_process.cpp > CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_thread_pool_process.cpp > CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.i
 
 CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_thread_pool_process.cpp -o CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_thread_pool_process.cpp -o CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.s
 
 CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/server.dir/TCP/src/tcp_thread_pool_process.cpp.o.provides.build: CMak
 
 CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.o: TCP/src/tcp_channel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_channel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_channel.cpp
 
 CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_channel.cpp > CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_channel.cpp > CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.i
 
 CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_channel.cpp -o CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_channel.cpp -o CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.s
 
 CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/server.dir/TCP/src/tcp_channel.cpp.o.provides.build: CMakeFiles/serve
 
 CMakeFiles/server.dir/TCP/src/tcp_server.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/TCP/src/tcp_server.cpp.o: TCP/src/tcp_server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_server.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_server.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_server.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_server.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_server.cpp
 
 CMakeFiles/server.dir/TCP/src/tcp_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/TCP/src/tcp_server.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_server.cpp > CMakeFiles/server.dir/TCP/src/tcp_server.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_server.cpp > CMakeFiles/server.dir/TCP/src/tcp_server.cpp.i
 
 CMakeFiles/server.dir/TCP/src/tcp_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/TCP/src/tcp_server.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_server.cpp -o CMakeFiles/server.dir/TCP/src/tcp_server.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_server.cpp -o CMakeFiles/server.dir/TCP/src/tcp_server.cpp.s
 
 CMakeFiles/server.dir/TCP/src/tcp_server.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/server.dir/TCP/src/tcp_server.cpp.o.provides.build: CMakeFiles/server
 
 CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.o: TCP/src/tcp_buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_buffer.cpp
 
 CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_buffer.cpp > CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_buffer.cpp > CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.i
 
 CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_buffer.cpp -o CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_buffer.cpp -o CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.s
 
 CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/server.dir/TCP/src/tcp_buffer.cpp.o.provides.build: CMakeFiles/server
 
 CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.o: TCP/src/tcp_buff_pool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_buff_pool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_buff_pool.cpp
 
 CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_buff_pool.cpp > CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_buff_pool.cpp > CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.i
 
 CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/TCP/src/tcp_buff_pool.cpp -o CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/TCP/src/tcp_buff_pool.cpp -o CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.s
 
 CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/server.dir/TCP/src/tcp_buff_pool.cpp.o.provides.build: CMakeFiles/ser
 
 CMakeFiles/server.dir/log/src/log_buffer.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/log/src/log_buffer.cpp.o: log/src/log_buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/server.dir/log/src/log_buffer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/log/src/log_buffer.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/log_buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/server.dir/log/src/log_buffer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/log/src/log_buffer.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/log/src/log_buffer.cpp
 
 CMakeFiles/server.dir/log/src/log_buffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/log/src/log_buffer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/log_buffer.cpp > CMakeFiles/server.dir/log/src/log_buffer.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/log/src/log_buffer.cpp > CMakeFiles/server.dir/log/src/log_buffer.cpp.i
 
 CMakeFiles/server.dir/log/src/log_buffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/log/src/log_buffer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/log_buffer.cpp -o CMakeFiles/server.dir/log/src/log_buffer.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/log/src/log_buffer.cpp -o CMakeFiles/server.dir/log/src/log_buffer.cpp.s
 
 CMakeFiles/server.dir/log/src/log_buffer.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/server.dir/log/src/log_buffer.cpp.o.provides.build: CMakeFiles/server
 
 CMakeFiles/server.dir/log/src/log_file.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/log/src/log_file.cpp.o: log/src/log_file.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/server.dir/log/src/log_file.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/log/src/log_file.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/log_file.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/server.dir/log/src/log_file.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/log/src/log_file.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/log/src/log_file.cpp
 
 CMakeFiles/server.dir/log/src/log_file.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/log/src/log_file.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/log_file.cpp > CMakeFiles/server.dir/log/src/log_file.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/log/src/log_file.cpp > CMakeFiles/server.dir/log/src/log_file.cpp.i
 
 CMakeFiles/server.dir/log/src/log_file.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/log/src/log_file.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/log_file.cpp -o CMakeFiles/server.dir/log/src/log_file.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/log/src/log_file.cpp -o CMakeFiles/server.dir/log/src/log_file.cpp.s
 
 CMakeFiles/server.dir/log/src/log_file.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/server.dir/log/src/log_file.cpp.o.provides.build: CMakeFiles/server.d
 
 CMakeFiles/server.dir/log/src/log_thread.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/log/src/log_thread.cpp.o: log/src/log_thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/server.dir/log/src/log_thread.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/log/src/log_thread.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/log_thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/server.dir/log/src/log_thread.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/log/src/log_thread.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/log/src/log_thread.cpp
 
 CMakeFiles/server.dir/log/src/log_thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/log/src/log_thread.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/log_thread.cpp > CMakeFiles/server.dir/log/src/log_thread.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/log/src/log_thread.cpp > CMakeFiles/server.dir/log/src/log_thread.cpp.i
 
 CMakeFiles/server.dir/log/src/log_thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/log/src/log_thread.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/log_thread.cpp -o CMakeFiles/server.dir/log/src/log_thread.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/log/src/log_thread.cpp -o CMakeFiles/server.dir/log/src/log_thread.cpp.s
 
 CMakeFiles/server.dir/log/src/log_thread.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/server.dir/log/src/log_thread.cpp.o.provides.build: CMakeFiles/server
 
 CMakeFiles/server.dir/log/src/logger.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/log/src/logger.cpp.o: log/src/logger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/server.dir/log/src/logger.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/log/src/logger.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/server.dir/log/src/logger.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/log/src/logger.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/log/src/logger.cpp
 
 CMakeFiles/server.dir/log/src/logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/log/src/logger.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/logger.cpp > CMakeFiles/server.dir/log/src/logger.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/log/src/logger.cpp > CMakeFiles/server.dir/log/src/logger.cpp.i
 
 CMakeFiles/server.dir/log/src/logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/log/src/logger.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/logger.cpp -o CMakeFiles/server.dir/log/src/logger.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/log/src/logger.cpp -o CMakeFiles/server.dir/log/src/logger.cpp.s
 
 CMakeFiles/server.dir/log/src/logger.cpp.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/server.dir/log/src/logger.cpp.o.provides.build: CMakeFiles/server.dir
 
 CMakeFiles/server.dir/log/src/log_stream.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/log/src/log_stream.cpp.o: log/src/log_stream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/server.dir/log/src/log_stream.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/log/src/log_stream.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/log_stream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/server.dir/log/src/log_stream.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/log/src/log_stream.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/log/src/log_stream.cpp
 
 CMakeFiles/server.dir/log/src/log_stream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/log/src/log_stream.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/log_stream.cpp > CMakeFiles/server.dir/log/src/log_stream.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/log/src/log_stream.cpp > CMakeFiles/server.dir/log/src/log_stream.cpp.i
 
 CMakeFiles/server.dir/log/src/log_stream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/log/src/log_stream.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/log/src/log_stream.cpp -o CMakeFiles/server.dir/log/src/log_stream.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/log/src/log_stream.cpp -o CMakeFiles/server.dir/log/src/log_stream.cpp.s
 
 CMakeFiles/server.dir/log/src/log_stream.cpp.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/server.dir/log/src/log_stream.cpp.o.provides.build: CMakeFiles/server
 
 CMakeFiles/server.dir/time/src/time_point.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/time/src/time_point.cpp.o: time/src/time_point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/server.dir/time/src/time_point.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/time/src/time_point.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/time/src/time_point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/server.dir/time/src/time_point.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/time/src/time_point.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/time/src/time_point.cpp
 
 CMakeFiles/server.dir/time/src/time_point.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/time/src/time_point.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/time/src/time_point.cpp > CMakeFiles/server.dir/time/src/time_point.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/time/src/time_point.cpp > CMakeFiles/server.dir/time/src/time_point.cpp.i
 
 CMakeFiles/server.dir/time/src/time_point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/time/src/time_point.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/time/src/time_point.cpp -o CMakeFiles/server.dir/time/src/time_point.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/time/src/time_point.cpp -o CMakeFiles/server.dir/time/src/time_point.cpp.s
 
 CMakeFiles/server.dir/time/src/time_point.cpp.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/server.dir/time/src/time_point.cpp.o.provides.build: CMakeFiles/serve
 
 CMakeFiles/server.dir/time/src/timmer.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/time/src/timmer.cpp.o: time/src/timmer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/server.dir/time/src/timmer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/time/src/timmer.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/time/src/timmer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/server.dir/time/src/timmer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/time/src/timmer.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/time/src/timmer.cpp
 
 CMakeFiles/server.dir/time/src/timmer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/time/src/timmer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/time/src/timmer.cpp > CMakeFiles/server.dir/time/src/timmer.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/time/src/timmer.cpp > CMakeFiles/server.dir/time/src/timmer.cpp.i
 
 CMakeFiles/server.dir/time/src/timmer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/time/src/timmer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/time/src/timmer.cpp -o CMakeFiles/server.dir/time/src/timmer.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/time/src/timmer.cpp -o CMakeFiles/server.dir/time/src/timmer.cpp.s
 
 CMakeFiles/server.dir/time/src/timmer.cpp.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/server.dir/time/src/timmer.cpp.o.provides.build: CMakeFiles/server.di
 
 CMakeFiles/server.dir/HTTP/src/html_file.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/HTTP/src/html_file.cpp.o: HTTP/src/html_file.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/server.dir/HTTP/src/html_file.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/HTTP/src/html_file.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/html_file.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/server.dir/HTTP/src/html_file.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/HTTP/src/html_file.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/html_file.cpp
 
 CMakeFiles/server.dir/HTTP/src/html_file.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/HTTP/src/html_file.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/html_file.cpp > CMakeFiles/server.dir/HTTP/src/html_file.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/html_file.cpp > CMakeFiles/server.dir/HTTP/src/html_file.cpp.i
 
 CMakeFiles/server.dir/HTTP/src/html_file.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/HTTP/src/html_file.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/html_file.cpp -o CMakeFiles/server.dir/HTTP/src/html_file.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/html_file.cpp -o CMakeFiles/server.dir/HTTP/src/html_file.cpp.s
 
 CMakeFiles/server.dir/HTTP/src/html_file.cpp.o.requires:
 
@@ -467,16 +467,16 @@ CMakeFiles/server.dir/HTTP/src/html_file.cpp.o.provides.build: CMakeFiles/server
 
 CMakeFiles/server.dir/HTTP/src/http_deal.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/HTTP/src/http_deal.cpp.o: HTTP/src/http_deal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/server.dir/HTTP/src/http_deal.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/HTTP/src/http_deal.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/http_deal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/server.dir/HTTP/src/http_deal.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/HTTP/src/http_deal.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/http_deal.cpp
 
 CMakeFiles/server.dir/HTTP/src/http_deal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/HTTP/src/http_deal.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/http_deal.cpp > CMakeFiles/server.dir/HTTP/src/http_deal.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/http_deal.cpp > CMakeFiles/server.dir/HTTP/src/http_deal.cpp.i
 
 CMakeFiles/server.dir/HTTP/src/http_deal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/HTTP/src/http_deal.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/http_deal.cpp -o CMakeFiles/server.dir/HTTP/src/http_deal.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/http_deal.cpp -o CMakeFiles/server.dir/HTTP/src/http_deal.cpp.s
 
 CMakeFiles/server.dir/HTTP/src/http_deal.cpp.o.requires:
 
@@ -491,16 +491,16 @@ CMakeFiles/server.dir/HTTP/src/http_deal.cpp.o.provides.build: CMakeFiles/server
 
 CMakeFiles/server.dir/HTTP/src/http_message.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/HTTP/src/http_message.cpp.o: HTTP/src/http_message.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/server.dir/HTTP/src/http_message.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/HTTP/src/http_message.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/http_message.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/server.dir/HTTP/src/http_message.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/HTTP/src/http_message.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/http_message.cpp
 
 CMakeFiles/server.dir/HTTP/src/http_message.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/HTTP/src/http_message.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/http_message.cpp > CMakeFiles/server.dir/HTTP/src/http_message.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/http_message.cpp > CMakeFiles/server.dir/HTTP/src/http_message.cpp.i
 
 CMakeFiles/server.dir/HTTP/src/http_message.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/HTTP/src/http_message.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/http_message.cpp -o CMakeFiles/server.dir/HTTP/src/http_message.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/http_message.cpp -o CMakeFiles/server.dir/HTTP/src/http_message.cpp.s
 
 CMakeFiles/server.dir/HTTP/src/http_message.cpp.o.requires:
 
@@ -515,16 +515,16 @@ CMakeFiles/server.dir/HTTP/src/http_message.cpp.o.provides.build: CMakeFiles/ser
 
 CMakeFiles/server.dir/HTTP/src/http_server.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/HTTP/src/http_server.cpp.o: HTTP/src/http_server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/server.dir/HTTP/src/http_server.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/HTTP/src/http_server.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/http_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/server.dir/HTTP/src/http_server.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/HTTP/src/http_server.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/http_server.cpp
 
 CMakeFiles/server.dir/HTTP/src/http_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/HTTP/src/http_server.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/http_server.cpp > CMakeFiles/server.dir/HTTP/src/http_server.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/http_server.cpp > CMakeFiles/server.dir/HTTP/src/http_server.cpp.i
 
 CMakeFiles/server.dir/HTTP/src/http_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/HTTP/src/http_server.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/http_server.cpp -o CMakeFiles/server.dir/HTTP/src/http_server.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/http_server.cpp -o CMakeFiles/server.dir/HTTP/src/http_server.cpp.s
 
 CMakeFiles/server.dir/HTTP/src/http_server.cpp.o.requires:
 
@@ -539,16 +539,16 @@ CMakeFiles/server.dir/HTTP/src/http_server.cpp.o.provides.build: CMakeFiles/serv
 
 CMakeFiles/server.dir/HTTP/src/http_request.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/HTTP/src/http_request.cpp.o: HTTP/src/http_request.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/server.dir/HTTP/src/http_request.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/HTTP/src/http_request.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/http_request.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/server.dir/HTTP/src/http_request.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/HTTP/src/http_request.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/http_request.cpp
 
 CMakeFiles/server.dir/HTTP/src/http_request.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/HTTP/src/http_request.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/http_request.cpp > CMakeFiles/server.dir/HTTP/src/http_request.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/http_request.cpp > CMakeFiles/server.dir/HTTP/src/http_request.cpp.i
 
 CMakeFiles/server.dir/HTTP/src/http_request.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/HTTP/src/http_request.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/HTTP/src/http_request.cpp -o CMakeFiles/server.dir/HTTP/src/http_request.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/HTTP/src/http_request.cpp -o CMakeFiles/server.dir/HTTP/src/http_request.cpp.s
 
 CMakeFiles/server.dir/HTTP/src/http_request.cpp.o.requires:
 
@@ -563,16 +563,16 @@ CMakeFiles/server.dir/HTTP/src/http_request.cpp.o.provides.build: CMakeFiles/ser
 
 CMakeFiles/server.dir/base/src/file_read.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/base/src/file_read.cpp.o: base/src/file_read.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/server.dir/base/src/file_read.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/base/src/file_read.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/base/src/file_read.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/server.dir/base/src/file_read.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/base/src/file_read.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/base/src/file_read.cpp
 
 CMakeFiles/server.dir/base/src/file_read.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/base/src/file_read.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/base/src/file_read.cpp > CMakeFiles/server.dir/base/src/file_read.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/base/src/file_read.cpp > CMakeFiles/server.dir/base/src/file_read.cpp.i
 
 CMakeFiles/server.dir/base/src/file_read.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/base/src/file_read.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/base/src/file_read.cpp -o CMakeFiles/server.dir/base/src/file_read.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/base/src/file_read.cpp -o CMakeFiles/server.dir/base/src/file_read.cpp.s
 
 CMakeFiles/server.dir/base/src/file_read.cpp.o.requires:
 
@@ -587,16 +587,16 @@ CMakeFiles/server.dir/base/src/file_read.cpp.o.provides.build: CMakeFiles/server
 
 CMakeFiles/server.dir/base/src/local_message.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/base/src/local_message.cpp.o: base/src/local_message.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/server.dir/base/src/local_message.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/base/src/local_message.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/base/src/local_message.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/server.dir/base/src/local_message.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/base/src/local_message.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/base/src/local_message.cpp
 
 CMakeFiles/server.dir/base/src/local_message.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/base/src/local_message.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/base/src/local_message.cpp > CMakeFiles/server.dir/base/src/local_message.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/base/src/local_message.cpp > CMakeFiles/server.dir/base/src/local_message.cpp.i
 
 CMakeFiles/server.dir/base/src/local_message.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/base/src/local_message.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/base/src/local_message.cpp -o CMakeFiles/server.dir/base/src/local_message.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/base/src/local_message.cpp -o CMakeFiles/server.dir/base/src/local_message.cpp.s
 
 CMakeFiles/server.dir/base/src/local_message.cpp.o.requires:
 
@@ -611,16 +611,16 @@ CMakeFiles/server.dir/base/src/local_message.cpp.o.provides.build: CMakeFiles/se
 
 CMakeFiles/server.dir/base/src/safe_queue.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/base/src/safe_queue.cpp.o: base/src/safe_queue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/server.dir/base/src/safe_queue.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/base/src/safe_queue.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/base/src/safe_queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/server.dir/base/src/safe_queue.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/base/src/safe_queue.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/base/src/safe_queue.cpp
 
 CMakeFiles/server.dir/base/src/safe_queue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/base/src/safe_queue.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/base/src/safe_queue.cpp > CMakeFiles/server.dir/base/src/safe_queue.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/base/src/safe_queue.cpp > CMakeFiles/server.dir/base/src/safe_queue.cpp.i
 
 CMakeFiles/server.dir/base/src/safe_queue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/base/src/safe_queue.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/base/src/safe_queue.cpp -o CMakeFiles/server.dir/base/src/safe_queue.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/base/src/safe_queue.cpp -o CMakeFiles/server.dir/base/src/safe_queue.cpp.s
 
 CMakeFiles/server.dir/base/src/safe_queue.cpp.o.requires:
 
@@ -635,16 +635,16 @@ CMakeFiles/server.dir/base/src/safe_queue.cpp.o.provides.build: CMakeFiles/serve
 
 CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.o: mysql/src/mysql_conn.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/mysql/src/mysql_conn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/mysql/src/mysql_conn.cpp
 
 CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/mysql/src/mysql_conn.cpp > CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/mysql/src/mysql_conn.cpp > CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.i
 
 CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/mysql/src/mysql_conn.cpp -o CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/mysql/src/mysql_conn.cpp -o CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.s
 
 CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.o.requires:
 
@@ -659,16 +659,16 @@ CMakeFiles/server.dir/mysql/src/mysql_conn.cpp.o.provides.build: CMakeFiles/serv
 
 CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.o: mysql/src/mysql_buf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/mysql/src/mysql_buf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/mysql/src/mysql_buf.cpp
 
 CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/mysql/src/mysql_buf.cpp > CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/mysql/src/mysql_buf.cpp > CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.i
 
 CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/mysql/src/mysql_buf.cpp -o CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/mysql/src/mysql_buf.cpp -o CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.s
 
 CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.o.requires:
 
@@ -683,16 +683,16 @@ CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.o.provides.build: CMakeFiles/serve
 
 CMakeFiles/server.dir/main.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/main.cpp.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/server.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/main.cpp.o -c /home/brightdust/cppProject/websrv/tl/web_server-master/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/server.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/main.cpp.o -c /home/brightdust/cppProject/websrv/tl/websrv/main.cpp
 
 CMakeFiles/server.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/web_server-master/main.cpp > CMakeFiles/server.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/brightdust/cppProject/websrv/tl/websrv/main.cpp > CMakeFiles/server.dir/main.cpp.i
 
 CMakeFiles/server.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/web_server-master/main.cpp -o CMakeFiles/server.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/brightdust/cppProject/websrv/tl/websrv/main.cpp -o CMakeFiles/server.dir/main.cpp.s
 
 CMakeFiles/server.dir/main.cpp.o.requires:
 
@@ -767,7 +767,7 @@ server: CMakeFiles/server.dir/mysql/src/mysql_buf.cpp.o
 server: CMakeFiles/server.dir/main.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -810,6 +810,6 @@ CMakeFiles/server.dir/clean:
 .PHONY : CMakeFiles/server.dir/clean
 
 CMakeFiles/server.dir/depend:
-	cd /home/brightdust/cppProject/websrv/tl/web_server-master && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/brightdust/cppProject/websrv/tl/web_server-master /home/brightdust/cppProject/websrv/tl/web_server-master /home/brightdust/cppProject/websrv/tl/web_server-master /home/brightdust/cppProject/websrv/tl/web_server-master /home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles/server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/brightdust/cppProject/websrv/tl/websrv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/brightdust/cppProject/websrv/tl/websrv /home/brightdust/cppProject/websrv/tl/websrv /home/brightdust/cppProject/websrv/tl/websrv /home/brightdust/cppProject/websrv/tl/websrv /home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles/server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/server.dir/depend
 

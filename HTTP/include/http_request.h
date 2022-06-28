@@ -10,14 +10,14 @@
 class TCPConnection;
 namespace Http
 {
-    extern const char* RN;
-    enum HttpMode
+    extern const char* RN;//"\r\n\r\n"
+    enum HttpMethod//http方法
     {
         Invalid,
         Get,
         Post,
     };
-    enum HttpVersion
+    enum HttpVersion//版本
     {
         Unknown,
         Http10,
@@ -30,30 +30,31 @@ namespace Http
         badMes      //无法理解的消息
 
     };
+//解析一个http报文
     class HttpRequest
     {
     public:
         HttpRequest()
         :   request_(Invalid), 
             version_(Unknown),
-            state_(empty_)
+            httpState_(empty_)
         {}
-        std::pair<MesState, char*> readMessage(TCPConnection *);
+        std::pair<MesState, char*> readMessage(TCPConnection* conn);
         void display();
-        HttpMode request() const { return request_; }
-        const std::string& query() const { return query_; }
-        const std::string& entity()const { return entity_;}
+        HttpMethod request() const {return request_;}
+        const std::string& query() const {return query_;}
+        const std::string& entity() const {return entity_;}
         void clear();
     private:
-        bool getRequest(char*, char*);
-        bool setHttpMode(const char*, const char*);
-        bool setHttpVersion(char*, char*);
-        char* getHeader(char*, char*);
-        char* findMessageHead(TCPConnection*);
+        bool getRequestLine(char* start, char* end);
+        bool setHttpMethod(const char* start, const char* end);
+        bool setHttpVersion(char* start, char* end);
+        char* getHeaderFields(char* start, char* end);
+        char* findMessageHead(TCPConnection* conn);
         std::string displayMode();
         std::string displayVersion();
     private:
-        enum State
+        enum HttpState
         {
             empty_,
             needHead_,
@@ -61,14 +62,13 @@ namespace Http
             finish_
         };
     private:
-        std::map<std::string, std::string> headerMap_; //������
-        std::string query_;  //URL      
-        std::string entity_; //ʵ�岿��
-        HttpMode request_;
+        std::map<std::string, std::string> headerMap_; //头部字段的消息
+        std::string query_;  //用户所需的URL      
+        std::string entity_; //实体部分
+        HttpMethod request_;
         HttpVersion version_;
-        static const size_t maxRequestSize=2048; //�����е���󳤶�
-        State state_;
+        HttpState httpState_;
+        static const size_t maxRequestSize = 2048; //
     };
-
 }
 #endif

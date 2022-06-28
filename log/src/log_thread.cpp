@@ -13,7 +13,7 @@ namespace Log
           preBuf_(bufNum_),
           currentBufIndex_(0)
     {
-        currentBuf_.reserve(bufSize_ + 10);//0603
+        // currentBuf_.reserve(bufSize_ + 10);//0603
         Logger::resizeBuf();
         assert(bufNum_ >= 2);
         for (int i = 0; i < bufNum_ - 1; i++)
@@ -45,9 +45,7 @@ namespace Log
             isChangeBuf = true;
             changeBuf(); //更换新的缓存
         }
-        std::cout << "write to vector<char>" << std::endl;//0603
-        ::memcpy(&currentBuf_[0] + currentBufIndex_, buf, size);//往vector<char>里写？？？
-        std::cout << "write to vector<char> Done!!!" << std::endl;//0603
+        ::memcpy(&currentBuf_[0] + currentBufIndex_, buf, size);//亲测有效
         currentBufIndex_ += size;
         if (isChangeBuf)
         {
@@ -118,7 +116,6 @@ namespace Log
 
     void LogThread::flushToFile()//bufToWrite_队列写入LogFile缓存
     {
-        std::cout << "flushToFile work, write to LogFile buffer...\n" << std::endl;//0603
         int size = bufToWrite_.size();
         writeMes_ = 0;
         for (int i = 0; i < size; i++)
@@ -129,6 +126,5 @@ namespace Log
             writeMes_ += temp.second;
             preBuf_.push(std::move(temp.first));//写完了放回preBuf_
         }
-        std::cout << "flushToFile work OK, write to LogFile buffer Done\n" << std::endl;//0603
     }
 }

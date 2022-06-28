@@ -25,13 +25,13 @@ namespace Http
         void dealConnection(TCPConnection* conn);
         char* findRequest(char* start, char* end);
         void connectClose(TCPConnection* conn);
-        bool  handleMes(TCPConnection* conn, HttpRequest&);
+        bool  handleMes(TCPConnection* conn, HttpRequest& quest);
     private:
         long connCount;  // 记录当前的连接数 
         WebResources WebResources_;        
         std::shared_ptr<TCPServer> tcpServer_;
         static HttpServer* entity;  
-        static thread_local mapType questMap_;
+        static thread_local mapType questMap_;//每个线程一份,正在处理的http请求
     };
 }
 #endif

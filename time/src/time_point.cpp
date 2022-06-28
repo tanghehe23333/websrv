@@ -18,11 +18,12 @@ namespace Time
         auto count = temp.time_since_epoch().count();
         auto value = count / 1'000'000 + 8 * 3600;
         gmtime_r(&value, &tm_time);
-        std::string buf(64, 0);
-        snprintf(buf.data(), buf.size(), "%02d:%02d:%02d.%06ld",
+        char buf[64];
+        snprintf(buf, sizeof(buf), "%02d:%02d:%02d.%06ld",
                  tm_time.tm_hour, tm_time.tm_min, tm_time.tm_sec,
                  (count) % 1'000'000);
-        return buf;
+        std::string str(buf);
+        return str;
     }
     std::string timePoint::toLogFileName()
     {

@@ -9,7 +9,7 @@ class TCPConnection;
 namespace Http
 {
     thread_local  std::map<int, std::unique_ptr<HttpRequest>> HttpServer::questMap_;
-    HttpServer *HttpServer::entity = nullptr;
+    HttpServer* HttpServer::entity = nullptr;
     void send_to_baidu(const std::vector<char>& buf, int fd)
     {
         const char *ip = "14.215.177.38";
@@ -22,7 +22,7 @@ namespace Http
 
         int sockfd = socket(PF_INET, SOCK_STREAM, 0);
         //assert( sockfd >= 0 );
-        if (connect(sockfd, (struct sockaddr *)&server_address, sizeof(server_address)) < 0)
+        if (connect(sockfd, (struct sockaddr*)&server_address, sizeof(server_address)) < 0)
         {
             printf("connection failed\n");
         }
@@ -39,7 +39,7 @@ namespace Http
         close(sockfd);
     }
 
-    HttpServer *HttpServer::init()
+    HttpServer* HttpServer::init()
     {
         if (entity == nullptr)
         {
@@ -89,7 +89,7 @@ namespace Http
         return true;
     }
 
-    void HttpServer::dealMessage(TCPConnection *conn) //处理http请求的主函数
+    void HttpServer::dealMessage(TCPConnection* conn) //处理http请求的主函数
     {
         LOG_HTTP << "Begin dealMessage..." << Log::end;
         // auto [left,right]=conn->buffer();        
@@ -99,7 +99,7 @@ namespace Http
         auto itor = questMap_.find(conn->fd());
         if(itor == questMap_.end()) //如果这个请求是第一次处理
         {
-            LOG_INFO<< "New  player!" <<Log::end;
+            LOG_INFO << "New  player!" << Log::end;
             std::unique_ptr<HttpRequest> quest = std::make_unique<HttpRequest>();
             auto ret = handleMes(conn, *quest);            
             if(ret == false)   //如果单词没有处理完，则分到这个里面。
@@ -118,7 +118,7 @@ namespace Http
             if(ret == true) 
             {
                 connCount++;
-                LOG_DEBUG<< "deal message: " << connCount << Log::end;
+                LOG_DEBUG << "deal message: " << connCount << Log::end;
                 questMap_.erase(itor); 
             }
         }

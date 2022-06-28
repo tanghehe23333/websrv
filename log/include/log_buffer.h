@@ -6,7 +6,7 @@
 
 namespace Log
 {
-    constexpr int bufferSize    = 10 * 1024;//10kB
+    constexpr int bufferSize    = 256;//1kB
     constexpr int headLevel     = bufferSize - 3;//高水位线 \r \n
     constexpr int lowLevel      = bufferSize - 256;//低水位线
     //日志缓冲类

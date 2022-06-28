@@ -23,8 +23,8 @@ namespace Log
   {
   public:
     Logger(std::function<void(char*, int)>);
-    constexpr char const* levelToStr();
-    LogStream& receive(const char* fileName, int line, const char* funName);
+    constexpr char const* levelToStr(Log::LogLevel logLevel);
+    LogStream& receive(const char* fileName, int line, const char* funName, Log::LogLevel logLevel);
     unsigned int findFileName(const char*);
     std::string dealFunName(const char* funName);
     static void resizeBuf()
@@ -45,25 +45,22 @@ namespace Log
 
 }
 
-const bool enableHttpDebug = false;
-constexpr Log::LogLevel logLevel = Log::LogLevel::DEBUG_;
+const bool enableHttpDebug = true;
+// constexpr Log::LogLevel logLevel = Log::LogLevel::INFO_;
 
 //暂时先设计成不支持动态变化日志等级的模式
 #define LOG_INFO                        \
-  if constexpr(logLevel <= Log::LogLevel::INFO_) \
-  Log::entity->logger_->receive(__FILE__, __LINE__, __func__)
+  Log::entity->logger_->receive(__FILE__, __LINE__, __func__, Log::INFO_)
 
 #define LOG_DEBUG                        \
-  if constexpr(logLevel <= Log::LogLevel::DEBUG_) \
-  Log::entity->logger_->receive(__FILE__, __LINE__, __func__)
+  Log::entity->logger_->receive(__FILE__, __LINE__, __func__, Log::DEBUG_)
 
 #define LOG_FATAL                        \
-  if constexpr(logLevel <= Log::LogLevel::FATAL_) \
-  Log::entity->logger_->receive(__FILE__, __LINE__, __func__)
+  Log::entity->logger_->receive(__FILE__, __LINE__, __func__, Log::FATAL_)
 
 #define LOG_HTTP       \
   if constexpr(enableHttpDebug) \
-  Log::entity->logger_ ->receive(__FILE__, __LINE__, __func__)
+  Log::entity->logger_ ->receive(__FILE__, __LINE__, __func__, Log::HTTP_)
 
 #define LOG_COUT std::cout
 

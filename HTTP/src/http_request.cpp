@@ -6,7 +6,6 @@
 
 namespace Http
 {
-
     const char* RN = "\r\n\r\n";
     std::pair<MesState, char*> HttpRequest::readMessage(TCPConnection* conn)
     {
@@ -17,31 +16,29 @@ namespace Http
         int currentSize; //当前传过来的数据数量
         int needSize; //当前还需要的数据
         std::map<std::string, std::string>::iterator iter;
-        switch (state_)
+        switch (httpState_)//用状态机来实现http解析
         {
         case empty_:
+        {
             left = findMessageHead(conn);
             //如果没有找到Http请求
             if (left == nullptr)
-                return std::pair(badMes, right);
-
+                return std::pair(badMes, right);            
+        }
         case needHead_:
-            temp = std::search(left, right, RN, RN + 4);
-            //如果请求行太长了，，，，
-            if (static_cast<size_t>(std::distance(left, temp)) > maxRequestSize)
+        {
+            temp = std::search(left, right, RN, RN + 4);            
+            if (static_cast<size_t>(std::distance(left, temp)) > maxRequestSize)//如果请求行太长了
                 return std::pair(badMes, right);
-
-            state_ = needHead_;
-
-            //如果没有\r\n\r\n 则说明没发完
-            if (temp == right)
+            httpState_ = needHead_;            
+            if (temp == right)//如果没有\r\n\r\n 则说明头部字段没发完
                 return std::pair(MoreMes, left);
-            left = getHeader(left, temp);
-            state_ = needEntity_;
-
+            left = getHeaderFields(left, temp);
+            httpState_ = needEntity_;   //头部字段处理完毕，状态转移         
+        }
         case needEntity_:
-            //后面没有数据�?
-            if (iter = headerMap_.find(std::string("Content-Length")); iter == headerMap_.end())
+        {                       
+            if (iter = headerMap_.find(std::string("Content-Length")); iter == headerMap_.end())//后面没有数据
             {
                 LOG_HTTP << "read message without entity" << Log::end;
                 return std::pair(CanDeal, left);
@@ -55,20 +52,19 @@ namespace Http
             if (needSize <= currentSize) //发送来的数据包大于需要的数据
             {
                 entity_.append(left, left + needSize);
-
-                state_ = finish_;
-
+                httpState_ = finish_;
                 return std::pair(CanDeal, left + needSize);
             }
             else
             {
                 entity_.append(left, left + currentSize);
                 return std::pair(MoreMes, right);
-            }
+            } 
+        }
         case finish_:   //不应该跑到这里
-
+        {}
         default: ;
-            LOG_FATAL<< "Unexpected state...." << Log::end;
+            LOG_FATAL << "Unexpected state...." << Log::end;
         }
         return std::pair(badMes, right);
     }
@@ -82,7 +78,7 @@ namespace Http
             index = std::search(left, right, RN, RN + 2); //寻找 \r\n
             if (index == right)
                 return nullptr; //没有\r\n 说明是垃圾
-            auto ret = getRequest(left, index); //处理请求
+            auto ret = getRequestLine(left, index); //处理请求行
             left = index + 2;
             if (ret)
                 return left; //如果找到了消息头，则直接返回
@@ -90,39 +86,40 @@ namespace Http
         return nullptr;
     }
 
-    bool HttpRequest::getRequest(char* start, char* end)
+    bool HttpRequest::getRequestLine(char* start, char* end)//处理请求行
     {
         auto index = start;
         auto iter = std::find(start, end, ' ');
-        if (iter != end && setHttpMode(index, iter))
+        if (iter != end && setHttpMethod(index, iter))//设置http方法
         {
             index = iter + 1;
             iter = std::find(index, end, ' ');
             if (iter != end)
             {
-                query_.append(index, iter);
+                query_.append(index, iter);//获取URL
             }
-            if (setHttpVersion(++iter, end))
+            if (setHttpVersion(++iter, end))//http版本
             {
-                return true;
+                return true;//方法 URL 版本都获取完了
             }
         }
         return false;
     }
 
-    char* HttpRequest::getHeader(char* start, char* end) //检索首部字段�?
+    bool HttpRequest::setHttpMethod(const char* start, const char* end)
     {
-        LOG_HTTP << "get header begin...." << Log::end;
-        char* indexStart = start, *indexEnd = start;
-        while (indexEnd != end)
+        std::string temp(start, end);
+        if (temp == "GET")
         {
-            indexEnd = std::search(indexStart, end, RN, RN + 2);
-            auto iter = std::find(indexStart, indexEnd, ':');
-            if (iter != indexEnd)
-                headerMap_[std::string(indexStart, iter)] = std::string(iter + 2, indexEnd);
-            indexStart = indexEnd + 2;
+            request_ = Get;
+            return true;
         }
-        return end + 4;
+        if (temp == "POST")
+        {
+            request_ = Post;
+            return true;
+        }
+        return false;
     }
 
     bool HttpRequest::setHttpVersion(char* start, char* end)
@@ -144,21 +141,19 @@ namespace Http
         return false;
     }
 
-    bool HttpRequest::setHttpMode(const char* start, const char* end)
+    char* HttpRequest::getHeaderFields(char* start, char* end) //检索头部字段
     {
-        
-        std::string temp(start, end);
-        if (temp == "GET")
+        LOG_HTTP << "get header begin...." << Log::end;
+        char* indexStart = start, *indexEnd = start;
+        while (indexEnd != end)
         {
-            request_ = Get;
-            return true;
+            indexEnd = std::search(indexStart, end, RN, RN + 2);
+            auto iter = std::find(indexStart, indexEnd, ':');
+            if (iter != indexEnd)
+                headerMap_[std::string(indexStart, iter)] = std::string(iter + 2, indexEnd);
+            indexStart = indexEnd + 2;
         }
-        if (temp == "POST")
-        {
-            request_ = Post;
-            return true;
-        }
-        return false;
+        return end + 4;
     }
 
     std::string HttpRequest::displayMode()
@@ -194,9 +189,9 @@ namespace Http
         headerMap_.clear();
         query_.clear();
         entity_.clear();
-        request_=Invalid;
-        version_=Unknown;
-        state_=empty_;
+        request_ = Invalid;
+        version_ = Unknown;
+        httpState_ = empty_;
     }
 
     void HttpRequest::display()

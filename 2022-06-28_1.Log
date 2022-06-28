@@ -1,0 +1,154 @@
+22:38:22.606518	8074	html_file.cpp  	12	WebResources   	Info: Find 17 HTML files..
+22:38:22.606534	8074	tcp_server.cpp 	12	init           	Info: 创建 TCPserver
+22:38:22.606551	8074	tcp_server.cpp 	31	beginServer    	Info: Server begin.......
+22:38:22.606564	8074	tcp_thread_pool	16	begin          	Info: Thread pool begin!  threadNum : 5
+22:38:22.606772	8074	tcp_acceptor.cp	51	createListenSoc	Info: creeate socket success!
+22:38:22.607181	8081	tcp_acceptor.cp	27	Loop           	Info: acceptor listen begin.......
+22:38:25.979610	8081	tcp_acceptor_ep	41	acceptLoop     	Info: new player socket: 59 ip: 192.168.43.110 port: 56574 nums: 1907041467
+22:38:25.980766	8081	tcp_thread_pool	60	pushConnect    	Info: PoolProcess::pushConnect59   epollfd:5
+22:38:25.980770	8081	tcp_thread_pool	93	weakup         	Info: process weak up!59
+22:38:25.980817	8076	tcp_thread_pool	105	receiveWeakup  	Info: new fd: 59
+22:38:25.980838	8076	tcp_buff_pool.c	99	getBuf         	Info: get buffer size: 2048 index: 
+22:38:25.980845	8076	tcp_buff_pool.c	99	getBuf         	Info: get buffer size: 2048 index: 
+22:38:25.982117	8076	tcp_buffer.cpp 	30	saveReadable   	Info: read begin: fd = 59
+22:38:25.982148	8076	tcp_server.cpp 	107	connReadable   	Info: connection can be read!
+22:38:25.982791	8076	http_server.cpp	94	dealMessage    	Info: Begin dealMessage...
+
+Log Message: Cost time: 3377.759ms, write bytes: 1.008Kb, Log reload: 0, Work ratio: 0.012%, Speeds: 0.000Mb/s
+22:38:25.983558	8076	http_server.cpp	102	dealMessage    	Info: New  player!
+22:38:25.983589	8076	http_request.cp	12	readMessage    	Info: read http message begin..
+22:38:25.983599	8076	http_request.cp	146	getHeaderFields	Info: get header begin....
+22:38:25.983617	8076	http_request.cp	43	readMessage    	Info: read message without entity
+22:38:25.983629	8076	http_deal.cpp  	127	sendFile       	Info: send size:89
+22:38:25.984105	8076	tcp_channel.cpp	75	enableWrite    	Info: channel: 59  enable write...
+22:38:25.984114	8076	http_server.cpp	110	dealMessage    	Info: deal message: 1
+
+Log Message: Cost time: 1.080ms, write bytes: 0.973Kb, Log reload: 0, Work ratio: 1.852%, Speeds: 0.901Mb/s
+22:38:25.984149	8076	tcp_connect.cpp	14	~TCPConnection 	Info: TCPConnection 析构...
+22:38:25.984154	8076	tcp_channel.cpp	31	dealEvent      	Info: re send begin...
+22:38:25.984203	8076	tcp_buffer.cpp 	95	sendSendable   	Info: Buffer: 发送完成!
+22:38:27.589004	8076	tcp_buffer.cpp 	30	saveReadable   	Info: read begin: fd = 59
+22:38:27.589464	8076	tcp_server.cpp 	107	connReadable   	Info: connection can be read!
+22:38:27.589471	8076	http_server.cpp	94	dealMessage    	Info: Begin dealMessage...
+22:38:27.589472	8076	http_server.cpp	102	dealMessage    	Info: New  player!
+22:38:27.589476	8076	http_request.cp	12	readMessage    	Info: read http message begin..
+22:38:27.589642	8076	http_request.cp	146	getHeaderFields	Info: get header begin....
+22:38:27.589683	8076	http_deal.cpp  	52	dealQuest      	Info: 新用户注册!
+22:38:27.590103	8076	http_deal.cpp  	127	sendFile       	Info: send size:88
+
+Log Message: Cost time: 1606.114ms, write bytes: 0.949Kb, Log reload: 0, Work ratio: 0.020%, Speeds: 0.001Mb/s
+22:38:27.590432	8076	tcp_channel.cpp	75	enableWrite    	Info: channel: 59  enable write...
+22:38:27.590440	8076	http_server.cpp	110	dealMessage    	Info: deal message: 2
+22:38:27.590444	8076	tcp_connect.cpp	14	~TCPConnection 	Info: TCPConnection 析构...
+22:38:27.590447	8076	tcp_channel.cpp	31	dealEvent      	Info: re send begin...
+22:38:27.590475	8076	tcp_buffer.cpp 	95	sendSendable   	Info: Buffer: 发送完成!
+22:38:47.200873	8076	tcp_buffer.cpp 	30	saveReadable   	Info: read begin: fd = 59
+22:38:47.201365	8076	tcp_server.cpp 	107	connReadable   	Info: connection can be read!
+22:38:47.201371	8076	http_server.cpp	94	dealMessage    	Info: Begin dealMessage...
+22:38:49.379456	8076	tcp_server.cpp 	107	connReadable   	Info: connection can be read!
+22:38:49.378978	8081	tcp_acceptor_ep	41	acceptLoop     	Info: new player socket: 60 ip: 192.168.43.110 port: 56576 nums: 190704122:54:42.928031	9427	tcp_buff_pool.c	99	getBuf         	Info: get buffer size: 2048 index: 
+22:54:42.928063	9427	tcp_buffer.cpp 	30	saveReadable   	Info: read begin: fd = 59
+22:54:42.928095	9427	tcp_server.cpp 	107	connReadable   	Info: connection can be read!
+22:54:42.928100	9427	http_server.cpp	94	dealMessage    	HTTP: Begin dealMessage...
+22:54:42.928107	9427	http_server.cpp	102	dealMessage    	Info: New  player!
+22:54:42.928109	9427	http_request.cp	12	readMessage    	HTTP: read http message begin..
+22:54:42.928115	9427	http_request.cp	146	getHeaderFields	HTTP: get header begin....
+22:54:42.928129	9427	http_request.cp	43	readMessage    	HTTP: read message without entity
+22:54:42.928138	9427	http_deal.cpp  	127	sendFile       	HTTP: send size:88
+22:54:42.928153	9427	tcp_channel.cpp	75	enableWrite    	Info: channel: 59  enable write...
+22:54:42.928155	9427	http_server.cpp	110	dealMessage    	Debug: deal message: 1
+22:54:17.287967	9425	html_file.cpp  	12	WebResources   	HTTP: Find 17 HTML files..
+22:54:17.287973	9425	tcp_server.cpp 	12	init           	Debug: 创建 TCPserver
+22:54:17.287989	9425	tcp_server.cpp 	31	beginServer    	Debug: Server begin.......
+22:54:17.287991	9425	tcp_thread_pool	16	begin          	Debug: Thread pool begin!  threadNum : 5
+22:54:17.288161	9425	tcp_acceptor.cp	51	createListenSoc	Debug: creeate socket success!
+22:54:17.288774	9432	tcp_acceptor.cp	27	Loop           	Debug: acceptor listen begin.......
+22:54:42.927969	9432	tcp_acceptor_ep	41	acceptLoop     	Fatal: new player socket: 59 ip: 192.168.43.110 port: 56584 nums: 1907041467
+22:54:42.927991	9432	tcp_thread_pool	60	pushConnect    	Info: PoolProcess::pushConnect59   epollfd:5
+22:54:42.927993	9432	tcp_thread_pool	93	weakup         	Info: process weak up!59
+22:54:42.928016	9427	tcp_thread_pool	105	receiveWeakup  	Info: new fd: 59
+22:54:42.928023	9427	tcp_buff_pool.c	99	getBuf         	Info: get buffer size: 2048 index: 
+22:54:42.928157	9427	tcp_connect.cpp	14	~TCPConnection 	Info: TCPConnection 析构...
+22:54:42.928160	9427	tcp_channel.cpp	31	dealEvent      	Info: re send begin...
+22:54:42.928188	9427	tcp_buffer.cpp 	95	sendSendable   	Info: Buffer: 发送完成!
+
+Log Message: Cost time: 25640.817ms, write bytes: 1.954Kb, Log reload: 0, Work ratio: 0.001%, Speeds: 0.000Mb/s
+22:54:42.970008	9427	tcp_buffer.cpp 	30	saveReadable   	Info: read begin: fd = 59
+22:54:42.970026	9427	tcp_server.cpp 	107	connReadable   	Info: connection can be read!
+22:54:42.970030	9427	http_server.cpp	94	dealMessage    	HTTP: Begin dealMessage...
+22:54:42.970032	9427	http_server.cpp	102	dealMessage    	Info: New  player!
+22:54:42.970034	9427	http_request.cp	12	readMessage    	HTTP: read http message begin..
+22:54:42.970038	9427	http_request.cp	146	getHeaderFields	HTTP: get header begin....
+22:54:42.970047	9427	http_request.cp	43	readMessage    	HTTP: read message without entity
+22:54:42.970054	9427	http_deal.cpp  	127	sendFile       	HTTP: send size:91
+22:54:42.970071	9427	tcp_channel.cpp	75	enableWrite    	Info: channel: 59  enable write...
+22:54:42.970073	9427	http_server.cpp	110	dealMessage    	Debug: deal message: 2
+22:54:42.970075	9427	tcp_connect.cpp	14	~TCPConnection 	Info: TCPConnection 析构...
+22:54:42.970077	9427	tcp_channel.cpp	31	dealEvent      	Info: re send begin...
+22:54:42.970083	9427	tcp_buffer.cpp 	95	sendSendable   	Info: Buffer: 发送完成!
+
+Log Message: Cost time: 42.963ms, write bytes: 0.964Kb, Log reload: 0, Work ratio: 0.086%, Speeds: 0.022Mb/s
+22:54:43.096891	9432	tcp_acceptor_ep	41	acceptLoop     	Fatal: new player socket: 60 ip: 192.168.43.110 port: 56586 nums: 1907041468
+22:54:43.096905	9432	tcp_thread_pool	60	pushConnect    	Info: PoolProcess::pushConnect60   epollfd:24
+22:54:43.096912	9432	tcp_thread_pool	93	weakup         	Info: process weak up!60
+22:54:43.096941	9428	tcp_thread_pool	105	receiveWeakup  	Info: new fd: 60
+22:54:43.096946	9428	tcp_buff_pool.c	99	getBuf         	Info: get buffer size: 2048 index: 
+
+Log Message: Cost time: 125.520ms, write bytes: 1.008Kb, Log reload: 0, Work ratio: 0.026%, Speeds: 0.008Mb/s
+22:54:43.097012	9428	tcp_buff_pool.c	99	getBuf         	Info: get buffer size: 2048 index: 
+22:54:43.097027	9428	tcp_buffer.cpp 	30	saveReadable   	Info: read begin: fd = 60
+22:54:43.097051	9428	tcp_server.cpp 	107	connReadable   	Info: connection can be read!
+22:54:43.097054	9428	http_server.cpp	94	dealMessage    	HTTP: Begin dealMessage...
+22:54:43.097059	9428	http_server.cpp	102	dealMessage    	Info: New  player!
+22:54:43.097061	9428	http_request.cp	12	readMessage    	HTTP: read http message begin..
+22:54:43.097065	9428	http_request.cp	146	getHeaderFields	HTTP: get header begin....
+22:54:43.097076	9428	http_request.cp	43	readMessage    	HTTP: read message without entity
+22:54:43.097083	9428	http_deal.cpp  	127	sendFile       	HTTP: send size:89
+22:54:43.097092	9428	tcp_channel.cpp	75	enableWrite    	Info: channel: 60  enable write...
+
+Log Message: Cost time: 0.111ms, write bytes: 0.973Kb, Log reload: 0, Work ratio: 20.721%, Speeds: 8.766Mb/s
+22:54:43.097128	9428	http_server.cpp	110	dealMessage    	Debug: deal message: 3
+22:54:43.097131	9428	tcp_connect.cpp	14	~TCPConnection 	Info: TCPConnection 析构...
+22:54:43.097133	9428	tcp_channel.cpp	31	dealEvent      	Info: re send begin...
+22:54:43.097152	9428	tcp_buffer.cpp 	95	sendSendable   	Info: Buffer: 发送完成!
+22:54:45.698374	9427	tcp_buffer.cpp 	30	saveReadable   	Info: read begin: fd = 59
+22:54:45.698389	9427	tcp_server.cpp 	107	connReadable   	Info: connection can be read!
+22:54:45.698393	9427	http_server.cpp	94	dealMessage    	HTTP: Begin dealMessage...
+22:54:45.698395	9427	http_server.cpp	102	dealMessage    	Info: New  player!
+22:54:45.698397	9427	http_request.cp	12	readMessage    	HTTP: read http message begin..
+22:54:45.698403	9427	http_request.cp	146	getHeaderFields	HTTP: get header begin....
+
+Log Message: Cost time: 2601.419ms, write bytes: 0.958Kb, Log reload: 0, Work ratio: 0.001%, Speeds: 0.000Mb/s
+22:54:45.735596	9427	http_deal.cpp  	127	sendFile       	HTTP: send size:88
+22:54:45.735653	9427	tcp_channel.cpp	75	enableWrite    	Info: channel: 59  enable write...
+22:54:45.735668	9427	http_server.cpp	110	dealMessage    	Debug: deal message: 4
+22:54:45.735679	9427	tcp_connect.cpp	14	~TCPConnection 	Info: TCPConnection 析构...
+22:54:45.735687	9427	tcp_channel.cpp	31	dealEvent      	Info: re send begin...
+22:54:45.735726	9427	tcp_buffer.cpp 	95	sendSendable   	Info: Buffer: 发送完成!
+22:54:47.080353	9427	tcp_buffer.cpp 	30	saveReadable   	Info: read begin: fd = 59
+22:54:47.080372	9427	tcp_server.cpp 	107	connReadable   	Info: connection can be read!
+22:54:47.080376	9427	http_server.cpp	94	dealMessage    	HTTP: Begin dealMessage...
+22:54:47.080379	9427	http_server.cpp	102	dealMessage    	Info: New  player!
+
+Log Message: Cost time: 1381.869ms, write bytes: 0.956Kb, Log reload: 0, Work ratio: 0.002%, Speeds: 0.001Mb/s
+22:54:47.080430	9427	http_request.cp	12	readMessage    	HTTP: read http message begin..
+22:54:47.080436	9427	http_request.cp	146	getHeaderFields	HTTP: get header begin....
+22:54:47.080462	9427	http_deal.cpp  	127	sendFile       	HTTP: send size:88
+22:54:47.080478	9427	tcp_channel.cpp	75	enableWrite    	Info: channel: 59  enable write...
+22:54:47.080482	9427	http_server.cpp	110	dealMessage    	Debug: deal message: 5
+22:54:47.080484	9427	tcp_connect.cpp	14	~TCPConnection 	Info: TCPConnection 析构...
+22:54:47.080487	9427	tcp_channel.cpp	31	dealEvent      	Info: re send begin...
+22:54:47.080495	9427	tcp_buffer.cpp 	95	sendSendable   	Info: Buffer: 发送完成!
+22:54:47.134098	9427	tcp_buffer.cpp 	30	saveReadable   	Info: read begin: fd = 59
+22:54:47.134124	9427	tcp_server.cpp 	107	connReadable   	Info: connection can be read!
+
+Log Message: Cost time: 53.746ms, write bytes: 0.950Kb, Log reload: 0, Work ratio: 0.069%, Speeds: 0.018Mb/s
+22:54:47.134185	9427	http_server.cpp	94	dealMessage    	HTTP: Begin dealMessage...
+22:54:47.134187	9427	http_server.cpp	102	dealMessage    	Info: New  player!
+22:54:47.134190	9427	http_request.cp	12	readMessage    	HTTP: read http message begin..
+22:54:47.134196	9427	http_request.cp	146	getHeaderFields	HTTP: get header begin....
+22:54:47.134206	9427	http_request.cp	43	readMessage    	HTTP: read message without entity
+22:54:47.134209	9427	http_deal.cpp  	119	sendFile       	Fatal: 远程用户请求了不存在的数据
+22:54:47.134213	9427	tcp_channel.cpp	75	enableWrite    	Info: channel: 59  enable write...
+22:54:47.134216	9427	http_deal.cpp  	158	sendBadMessage 	HTTP: error: cannot find request files: /xxx.video
+22:54:47.134218	9427	http_server.cpp	110	dealMessage    	Debug: deal message: 6

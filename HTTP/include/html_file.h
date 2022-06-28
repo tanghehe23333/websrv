@@ -11,10 +11,10 @@
 
 namespace Http
 {
-    class HtmlFile : public Base::FileRead //
+    class HtmlFile : public Base::FileRead //封装html文件
     {
     public:
-        HtmlFile(const std::string &path)
+        HtmlFile(const std::string& path)
             : Base::FileRead(path)
         {}
         ~HtmlFile()
@@ -23,13 +23,13 @@ namespace Http
         std::string buf_;
     };
 
-    class WebResources
+    class WebResources//封装所有的html文件
     {
     public:
         using fileMap = std::map<std::string, std::shared_ptr<HtmlFile>>;
         WebResources();
-        int num() const { return num_; }
-        std::shared_ptr<const HtmlFile> findHtml(const std::string &) const;
+        int num() const {return num_;}
+        std::shared_ptr<const HtmlFile> findHtml(const std::string& name) const;
     private:
         void findFile();
         fileMap files_;

@@ -19,11 +19,6 @@ namespace Log
         fp_ = ::fopen(name.c_str(), "a");//“a”
         assert(fp_);  //输入的日志保存路径失败
         //::setbuffer(fp_, buffer_, sizeof(buffer_));//设置文件流的缓冲
-
-        const char *str = "hello world\n";//0603
-        auto n = ::fwrite_unlocked(str, 1, 12, fp_);//无锁速度快，moduo//0603
-        flush();
-        std::cout << "direct write done " << n << "byte writed" << std::endl; 
     }
 
     LogFile::~LogFile()
@@ -34,7 +29,7 @@ namespace Log
 
     void LogFile::writeMessage(const char* message, size_t len)
     {
-        std::cout << "write to LogFile buffer \n" << std::endl;
+        // std::cout << "write to LogFile buffer \n" << std::endl;
         assert(len >= 0);
         size_t written = 0;
         while (written != len)
@@ -53,10 +48,8 @@ namespace Log
         {
             changeFile();
         }
-        std::cout << "write to LogFile buffer Done! \n" << std::endl;
-        flush();//0603
-        std::cout << "LogFile flush Done \n" << std::endl;
     }
+
     void LogFile::flush()
     {
         ::fflush(fp_);

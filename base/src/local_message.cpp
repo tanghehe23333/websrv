@@ -5,7 +5,7 @@ thread_local int thread_tid = 0;
 
 namespace Base
 {
-    LocalMessage *LocalMessage::readConfig(const std::filesystem::path& path)
+    LocalMessage* LocalMessage::readConfig(const std::filesystem::path& path)
     {
         if (!entity_)
         {

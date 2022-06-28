@@ -1,1 +1,1 @@
-/home/brightdust/cppProject/websrv/tl/web_server-master/CMakeFiles/server.dir
+/home/brightdust/cppProject/websrv/tl/websrv/CMakeFiles/server.dir

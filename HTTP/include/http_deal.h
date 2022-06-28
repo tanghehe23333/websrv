@@ -12,7 +12,7 @@ namespace Http
 {
     class HttpRequest;
     class WebResources;
-
+//业务逻辑
     class HttpDeal
     {
     public:
@@ -20,17 +20,17 @@ namespace Http
         :quest_(quest),conn_(conn)
         {}
         bool dealQuest();
-        static void setResource(WebResources*);
+        static void setResource(WebResources* resource);
     private:
         void sendBadMessage();
-        void readEntity(); //��ȡHTTP���ĵ�ʵ����Ϣ
-        void sendFile(const std::string&);  //����w
-        bool addNewPlayer();  //处理系用户注册的信息。
+        void readEntity(); //
+        void sendFile(const std::string&);  //
+        bool addNewPlayer();  //处理新用户注册的信息。
     private:
         std::map<std::string, std::string> entityMap_;
-        HttpRequest&   quest_;        
-        TCPConnection& conn_;
-        static WebResources* resource_;  //多线程在这里�?做�?�取操作，应该不会出现资源竞争问题�?
+        HttpRequest&   quest_;//http报文     
+        TCPConnection& conn_;//tcp连接
+        static WebResources* resource_;  //网页资源，多线程读
     };
 }
 

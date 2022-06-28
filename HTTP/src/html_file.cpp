@@ -1,5 +1,4 @@
 #include "html_file.h"
-
 #include "local_message.h"
 
 namespace fs = std::filesystem;
@@ -13,7 +12,7 @@ namespace Http
         LOG_HTTP << "Find " << num_ << " HTML files.." << Log::end;
     }
 
-    void WebResources::findFile()
+    void WebResources::findFile()//扫描一遍html文件夹，把文件存进map
     {
         std::string path = Base::LocalMessage::htmlPath();
         fs::path filePath(path);
@@ -23,14 +22,14 @@ namespace Http
         {
             if (!file.is_regular_file())
                 continue;
-            HtmlFile *htmlFile = new HtmlFile(file.path().string());
+            HtmlFile* htmlFile = new HtmlFile(file.path().string());
             num_++;
             std::string fullName = std::string("/") + file.path().filename().c_str();
             files_[fullName] = std::shared_ptr<HtmlFile>(htmlFile);
         }
     }
 
-    std::shared_ptr<const HtmlFile> WebResources::findHtml(const std::string &name) const
+    std::shared_ptr<const HtmlFile> WebResources::findHtml(const std::string& name) const
     {
         auto iter = files_.find(name);
         if (iter == files_.end())

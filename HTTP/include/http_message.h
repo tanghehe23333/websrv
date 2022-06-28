@@ -4,9 +4,7 @@
 #include <string>
 #include <map>
 
-#include <http_request.h>
-
-
+#include "http_request.h"
 
 namespace Http
 {
@@ -18,21 +16,20 @@ namespace Http
         Http404 = 404, // 被请求的报文不在服务器上
         Http505 = 505  // 服务器不支持强求报文使用的HTTP格式。
     };
-
     enum HttpConnMode // 设置长连接还是短连接
     {
         ConnKeep,
         ConnClose
     };
-
+//http的返回报文
     class HttpMessage
     {
     public:
         HttpMessage(HttpReplyMode mod = Http200, HttpVersion version = Http11)
             : mod_(mod), version_(version)
         {}
-        void setMessageMode(HttpReplyMode mod) { mod_ = mod; }
-        std::string dealMessage(const std::string &mese);
+        void setMessageMode(HttpReplyMode mod) {mod_ = mod;}
+        std::string dealMessage(const std::string& mess);
         void fillRequestMessage(size_t size)
         {
             setContentLength(size);
@@ -45,6 +42,7 @@ namespace Http
         {
             addHeader("Content-Length", std::to_string(size));
         }
+    private:
         std::string HeaderInfo_; //请求行的信息
         HttpReplyMode mod_;
         HttpVersion version_;

@@ -7,7 +7,7 @@
 
 namespace Base
 {
-    class FileRead
+    class FileRead//封装一个文件的类
     {
     public:
         FileRead(const std::string& path);
